@@ -1,0 +1,46 @@
+{
+  "tareas": [
+    {
+      "id": 6,
+      "titulo": "Pollo Vignolo",
+      "fecha": "2022-01-01",
+      "obraSocial": "APOS"
+    },
+    {
+      "titulo": "Penta Reyna",
+      "fecha": "2022-04-04 17:15",
+      "id": 5,
+      "obraSocial": "SANCOR"
+    },
+    {
+      "id": 4,
+      "fecha": "2022-09-19T04:44:07.783Z",
+      "titulo": "Jocesito Beattle",
+      "obraSocial": "Ninguna"
+    },
+    {
+      "titulo": "Santiago Nicolas C3",
+      "fecha": "2022-03-03 02:50",
+      "id": 3,
+      "obraSocial": "SANCOR"
+    },
+    {
+      "id": 2,
+      "fecha": "2022-09-19T22:51:11.703Z",
+      "titulo": "Mapache Bulos",
+      "obraSocial": "APOS"
+    },
+    {
+      "id": 9,
+      "titulo": "El Pulga Rodriguez",
+      "fecha": "2022-01-01",
+      "obraSocial": "APOS"
+    },
+    {
+      "id": 12,
+      "titulo": "El Pulga Rodriguez",
+      "fecha": "2022-01-01",
+      "obraSocial": "APOS"
+    }
+  ]
+}

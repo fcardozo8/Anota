@@ -1,0 +1,71 @@
+<header class="text-dark">
+<!--  <h1 class="p-3 mb-2 bg-secondary text-white"></h1>
+    <h1 class="display-6 ms-2 text-center">{{titulo2 ?? "Titulo Por Defecto"}}</h1> -->
+<!--    <nav class="grey lighten-3">
+
+      <div class="nav-wrapper container">
+          <a href="#" class="brand-logo">Centro de Salud - Chilecito</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+          </ul>
+      </div>
+
+    </nav>
+
+  -->
+
+  
+    <nav class="nav-extended grey lighten-3">
+      <div class="nav-wrapper container">
+        <a routerLink="/pagina-principal" class="brand-logo blue-text" style="text-decoration: none">Centro de Salud - Chilecito</a>
+        <a routerLink="/pagina-principal" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="sass.html" class="blue-text">Sass</a></li>
+          <li><a href="badges.html"class="blue-text">Components</a></li>
+          <li><a href="collapsible.html" class="blue-text">JavaScript</a></li>
+        </ul>
+      </div>
+      <div class="nav-content container" id="navbarNav">
+        <ul class="tabs tabs-transparent">
+<!--          <li class="nav-item">
+            <a class="nav-link active" class="blue-text"  style="text-decoration: none" aria-current="page" href="#">PAGINA PRINCIPAL</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link active" class="blue-text"  style="text-decoration: none" aria-current="page" routerLink="/pagina-principal" >PAGINA PRINCIPAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" class="blue-text" style="text-decoration: none" routerLink="/lista-tareas">Serie de pacientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" class="blue-text" style="text-decoration: none" routerLink="/lista-tareas-server">Serie de pacientes desde el Servidor</a>
+          </li>
+          
+
+     <!--     <li class="tab"><a class="blue-text" href="#test1">Test 1</a></li>
+          <li class="tab"><a class="active blue-text" href="#test2">Test 2</a></li>
+          <li class="tab disabled"><a class="blue-text" href="#test3">Disabled Tab</a></li>
+          <li class="tab"><a class="blue-text" href="#test4">Test 4</a></li>
+
+     -->    
+        </ul>
+      </div>
+    </nav>
+  
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">JavaScript</a></li>
+    </ul>
+    
+<!--
+      <div class="row">
+      <div id="test1" class="col s12 m2 grey lighten-1">Test 1</div>
+      <div id="test2" class="col s12"></div>
+      <div id="test3" class="col s12"></div>
+      <div id="test4" class="col s2 m2 grey lighten-3">Test 4</div>
+    </div>
+-->
+</header>
+

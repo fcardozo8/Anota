@@ -1,0 +1,40 @@
+<form class="m-3" #form="ngForm" (ngSubmit)="submitForm(form)">
+  <legend>Complete los datos para la tarea</legend>
+
+  Nombre:
+  <input type="text" class="form-control" name="txtNombre" #titulo="ngModel"
+         [(ngModel)]="tarea.titulo"
+         required />
+
+  <div *ngIf="!titulo.valid" class="text-end text-danger">
+      {{titulo.errors}}
+  </div>
+
+  ID:
+  <div class="input-group">
+
+      <input type="number" class="form-control" name="txtId"
+           #id="ngModel" placeholder="Solo numeros"
+           required min="1" max="99999999"
+          [(ngModel)]="tarea.id"  />
+  </div>
+  <div *ngIf="!id.valid" class="text-end text-danger">
+      {{id.errors }}
+  </div>
+
+
+
+  Fecha :
+  <input type="date" class="form-control" name="fecha"
+      [ngModel]="tarea.fecha | date : 'yyyy-MM-dd'"
+      (ngModelChange)="tarea.fecha = $event" />
+
+
+  <button [disabled]="form.invalid" class="btn btn-success w-100 mt-2">Agregar</button>
+</form>
+
+<div>
+  <h4>Degug Info</h4>
+  <div>Modelo: {{tarea | json}}</div>
+  <div>Form Valido: {{form.valid}}</div>
+</div>

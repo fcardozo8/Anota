@@ -1,0 +1,35 @@
+<ul class="list-group" style="overflow: hidden; overflow-y:scroll; height:70vh">
+    <li class="list-group-item list-group-item- blue lighten-4">Servidor - Listado de pacientes en espera: </li>
+    <li class="list-group-item list-group-item-secondary">
+        <div class="input-group">
+            <button class="btn btn-outline-success" (click)="agregarTarea()">
+                +
+            </button>
+        </div>
+    </li>
+            <!-- <button class="btn btn-outline-success" (click)="otraFormaAgregarTarea()">
+                +
+            </button> -->
+    <li class="list-group-item" *ngFor="let x of tareas">
+        <div>
+            <img class="float-start bg-secondary rounded-circle text-white p-2 me-3"
+            style="width: 98px"
+            src="https://cdn.pixabay.com/photo/2016/11/14/17/39/person-1824144_960_720.png">
+            <button class="btn btn-danger display-5  float-end mt-3" (click)="eliminarTarea(x.id!)">
+                Eliminar
+            </button>
+  
+            <button class="btn btn-info display-5 float-end mt-3" (click)="prepararModificar(x.id!,x.titulo)">
+              Editar
+          </button>
+  
+            <div class="fw-bold">{{x.titulo}} - {{x.obraSocial}}<br class="text center">Orden: {{x.id}}
+            </div>
+            <p>Horario de llegada:{{x.fecha | date : "HH:MM"}}hs</p>
+        </div>
+    </li>
+    <li *ngIf="tareas.length===0" class="list-group-item text-center fw-bold">
+        No hay Pacientes en espera
+    </li>
+  </ul>
+  
