@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Tarea } from '../models/tarea';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 

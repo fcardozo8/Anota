@@ -2,7 +2,15 @@
     <li class="list-group-item list-group-item- blue lighten-4">Servidor - Listado de pacientes en espera: </li>
     <li class="list-group-item list-group-item-secondary">
         <div class="input-group">
-            <button class="btn btn-outline-success" (click)="agregarTarea()">
+            <input #txtTarea class="form-control" type="text" placeholder="Nombre y Apellido..." />
+            <input #txtTarea2 class="form-control" type="number" placeholder="Edad..."  />
+            <select #txtTarea3  class="form-select" name="obraSocial" id="obraSocial" aria-label="Default select example">
+              <option value="" disabled selected >Obra Social...</option>
+              <option value="APOS">APOS</option>
+              <option value="SANCOR">SANCOR</option>
+              <option value="NO TIENE O.S.">Ninguna</option>
+            </select>
+            <button class="btn btn-outline-success" (click)="agregarTarea(txtTarea.value,txtTarea2.value,txtTarea3.value); txtTarea.value = '';">
                 +
             </button>
         </div>
@@ -19,7 +27,7 @@
                 Eliminar
             </button>
   
-            <button class="btn btn-info display-5 float-end mt-3" (click)="prepararModificar(x.id!,x.titulo)">
+            <button class="btn btn-info display-5 float-end mt-3" (click)="prepararModificar(x.id!,x.titulo,x.obraSocial)">
               Editar
           </button>
   
