@@ -5,6 +5,8 @@ import { ListaTareasComponent } from './components/lista-tareas/lista-tareas.com
 import { ListaTareasServerComponent } from './components/lista-tareas-server/lista-tareas-server.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from "./components/home/home.component";
+import { FooterComponent } from './components/footer/footer.component';
+import{ListaEsperaReactiveComponent} from "./components/lista-espera-reactive/lista-espera-reactive-server";
 
 const routes: Routes = [
 //  {path:"", component: AppComponent},
@@ -12,7 +14,10 @@ const routes: Routes = [
 //  {path:"modificar-tarea", component: ModificarTareaComponent},
   {path:"lista-tareas-server", component: ListaTareasServerComponent},
   {path:"lista-tareas", component: ListaTareasComponent},
-  {path:"pagina-principal", component:HomeComponent}
+  {path:"pagina-principal", component:HomeComponent},
+  {path:"footer", component:FooterComponent},
+  {path:"lista-espera-reactive-server", component:ListaEsperaReactiveComponent},
+
 
 ];
 

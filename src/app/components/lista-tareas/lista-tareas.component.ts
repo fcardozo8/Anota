@@ -18,7 +18,6 @@ export class ListaTareasComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
   eliminarTarea(id:number){
     console.log(id);
     this.tareas = this.tareas.filter(t => t.id != id);
